@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Убираем проблемы с отступами */
+}
+
+body {
+    background: #f4f4f4; /* Светлый фон для всего сайта */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Темный текст для читаемости */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Выравниваем элементы по краям */
+    align-items: center; /* Центрируем по вертикали */
+    padding: 10px 20px; /* Увеличиваем отступы */
+    background-color: #222; /* Темный фон */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    opacity: 0,8;
+}
+
+
+
+.nav-list {
+    list-style-type: none; /* Убираем маркеры */
+    display: flex; /* Горизонтальное расположение */
+}
+
+.nav-list li {
+    margin: 0 15px; /* Отступы между элементами */
+}
+
+.nav-list a {
+    color: #fff; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 5px 10px; /* Отступы для улучшения кликабельности */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s; /* Плавный переход фона */
+}
+
+.nav-list a:hover {
+    background-color: #f39c12; /* Цвет фона при наведении */
+}
+
+.social-links {
+    display: flex; /* Горизонтальное расположение иконок */
+}
+
+.social-links a {
+    color: #fff; /* Цвет иконок */
+    margin-left: 10px; /* Отступ между иконками */
+    font-size: 20px; /* Размер иконок */
+    transition: color 0.3s; /* Плавный переход */
+}
+
+.social-links a:hover {
+    color: #f39c12; /* Цвет при наведении */
+}
+
+.section {
+    margin-bottom: 20px;
+    width: 100%;
+    background: #fff; /* Белый фон для основного контента */
+    padding: 100px 20px; /* Увеличиваем отступы сверху */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для визуального эффекта */
+    display: flex;
+    justify-content: space-evenly; /* Выравнивание содержимого */
+    
+}
+
+
+
+.img {
+    width: 200px;
+    height: 200px;
+}
+
+.block1 {
+    
+    width: 300px;
+    text-align: justify; /* Выравнивание текста по ширине */
+}
+
+.qurs {
+    padding: 10px 20px; /* Паддинг барои ҷои дохили матн */
+    color: rgb(20, 22, 147); /* Ранги матн */
+    text-align: center; /* Матнро мобайн мегузорад */
+    font-size: 18px; /* Андозаи ҳуруф */
+    font-weight: bold; /* Ғафс кардани ҳуруф */
+    text-decoration: none; /* Бартараф кардани хати зер */
+    border-radius: 8px; /* Гӯшаҳои мулоим */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Сояи сабук */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Аниматсия барои hover */
+  }
+  
+
+  
+  .qurs:hover {
+    background-color: #42bcc3; /* Тағйири ранги замина ҳангоми hover */
+    transform: translateY(-3px); /* Ҳангоми hover каме боло бурдан */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Таъсири сояи сахт ҳангоми hover */
+  }
+  
+
+.four-blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px; /* Фосила байни блокҳо */
+    padding: 20px;
+  }
+  
+  .small-block {
+    background-color: #fff;
+    width: 22%; /* Блоки 22% паҳнӣ барои дуруст ҷоигир шудани 4 блок */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .small-block img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .small-block p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .small-block:hover {
+    transform: translateY(-10px); /* Ҳангоми hover блок каме боло меравад */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Сояи иловагӣ ҳангоми hover */
+  }
+  
+  .small-block:hover img {
+    transform: scale(1.1); /* Тасвир каме калон мешавад ҳангоми hover */
+  }
+  
+  @media (max-width: 768px) {
+    .small-block {
+      width: 48%; /* Дар экранҳои хурдтар ду блок якҷоя мешаванд */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .small-block {
+      width: 100%; /* Дар экранҳои хурд як блок дар як қатор */
+    }
+  }
+  
+ /* Стили для секции информации о React */
+.react-info-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .react-info-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .react-info-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .react-info-section ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .react-info-section li {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  
+  .react-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Стили для секции контактов */
+.contact-section {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #f39c12;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #f39c12;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}

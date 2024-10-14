@@ -1,0 +1,30 @@
+/* Мавзӯи равшан */
+body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .theme-toggle-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  /* Мавзӯи торик */
+  .dark-theme {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .dark-theme .theme-toggle-btn .icon {
+    color: #ffd700; /* Ранги офтоб */
+  }
+  
