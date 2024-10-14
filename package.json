@@ -14,9 +14,8 @@
     "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "homepage": "https://Mastchoh.github.io/my-app"
+    "homepage": "https://mastchoh.github.io/my-app"
 
-    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,5 +47,4 @@
   "devDependencies": {
     "gh-pages": "^6.2.0"
   }
-  
 }
