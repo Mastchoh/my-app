@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './style/main.css';
 import logo from './img/image.png';
 import logo1 from './img/logo-inner.svg'
@@ -30,6 +30,7 @@ const Header = () => {
             <li><a onClick={() => scrollToSection('courses')}>Курсы</a></li>
             <li><a onClick={() => scrollToSection('projects')}>Проекты</a></li>
             <li><a onClick={() => scrollToSection('contact')}>Контакты</a></li>
+            <li><Link to="/registr">Регистратция</Link></li>
           </ul>
         </nav>
   
@@ -215,16 +216,23 @@ const Block = () => {
     );
 }
 
+
 const App = () => {
     return (
-        <div>
+      <div>
+        <Router>
             <Header />
-            <Main />
-            <Block/>
-            <Projects/>
-            <Contacts/>
-            <Footer/>
-        </div>
+            <Routes>
+              <Route path='/registr'element={<Main/>}></Route>
+            </Routes>
+          
+        </Router>
+          <Main />
+          <Block/>
+          <Projects/>
+          <Contacts/>
+          <Footer/>
+          </div>
     );
 };
 
